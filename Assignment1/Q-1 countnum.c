@@ -1,6 +1,11 @@
 
 #include <stdio.h>
 
+int main() {
+    int n;
+    printf("Enter number: ");
+    scanf("%d", &n);
+
 int countOnes(int num) {
     int count = 0;
     while (num != 0) {
@@ -11,12 +16,6 @@ int countOnes(int num) {
     }
     return count;
 }
-
-int main() {
-    int n;
-    printf("Enter number: ");
-    scanf("%d", &n);
-
     printf("Number of 1 bits = %d\n", countOnes(n));
     return 0;
 }
